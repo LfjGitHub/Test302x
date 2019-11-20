@@ -1,0 +1,30 @@
+file=app2
+
+# Chip Type: QCC3026
+# LK-VAM-APTX-CLHD->aptX Classic + aptX-HD Decoders
+# LK-VAM-APTX-LLCLHD->aptX Low Latency Decoders OR aptX  Classic + aptX-HD Decoders
+# LK-VAM-VOC-VAD->Voice Activity Detection
+# LK-VAM-VOC-VADKWD->Voice Activity Detection AND Keyword Detection 
+
+# Starting Address: 00025B00FF00
+# Ending Address: 00025B00FF0F
+# Number of Bluetooth Addresses: 16
+FeatureLicenseKey = [ 38 DD AF 1C A2 6D 00 AC 96 25 18 45 01 DF C9 0F 16 B5 EA 02 9A D0 43 4C 81 87 74 9B B1 5A 54 3F B2 EB 16 08 89 F1 27 33 28 30 36 1E F7 08 1E 28 B9 01 FE A4 16 0E 5C B5 EB A8 A5 7F 30 08 BB 8C ]
+
+USBProductString = [ 51 43 43 33 30 32 36 ]
+
+USBSerialNumberString = [ 41 42 43 44 45 46 30 31 32 33 34 35 36 37 38 39 ]
+
+# Cypress/Spansion S25FS-S QSPI flash requires minimum erase/program resume to suspend
+# delay that must be respected to avoid errors, 50us is recommended by Cypress.
+#
+# If QSPI other than Cypress/Spansion is used, this value should be amended according to
+# the flash datasheet.
+#
+# Note that this controls minimum delay and not a typical or average delay required
+# for a flash command to progress, which is often also specified in the datasheet.
+#
+# If the minimum delay required by the flash part is not stated in its datasheet
+# please contact the flash manufacturer for clarification.
+
+SiflashResumeToSuspendDelay = 50
